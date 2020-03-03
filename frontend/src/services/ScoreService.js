@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "http://localhost:8080"
+const url = "http://localhost:3001"
 
 const getScores = () => {
     return axios.get(url + "/scores")

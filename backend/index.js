@@ -11,11 +11,13 @@ app.get('/scores', (request, response) => {
     Score.find({
 
     }).then(data => {
+        data.sort((a,b) => b.score - a.score);
         response.json(data.map(oneScore => oneScore.toJSON()))
     }).catch(e => console.log(e))
 })
 
 app.post('/scores', (request, response) => {
+    console.log("tulee")
     const body = request.body
     const score = new Score({
         name: body.name,

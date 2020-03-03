@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "http://localhost:3001"
+const url = "https://obscure-beyond-88354.herokuapp.com/"
 
 const getScores = () => {
     return axios.get(url + "/scores")

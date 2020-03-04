@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,6BACI,iBACJ,CACA,iBACI,cACJ","file":"main.5cfe7b3b.chunk.css","sourcesContent":[".scoreboard-headline-wrapper {\r\n    text-align: center;\r\n}\r\n.scoreboard-text {\r\n    font-size: 30px;\r\n}"]}

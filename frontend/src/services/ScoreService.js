@@ -1,13 +1,13 @@
 import axios from 'axios'
 
-const url = "https://shrouded-chamber-27182.herokuapp.com"
+const url = '/scores'
 
 const getScores = () => {
-    return axios.get(url + "/scores")
+    return axios.get(url)
 }
 
 const saveScore = scoreToBeSaved => {
-    return axios.post(url + "/scores", scoreToBeSaved)
+    return axios.post(url, scoreToBeSaved)
 }
 
 export default {

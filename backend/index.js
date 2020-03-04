@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 app.use(cors())
 app.use(bodyParser.json())
-
+app.use(express.static('build'))
 app.get('/scores', (request, response) => {
     Score.find({
 

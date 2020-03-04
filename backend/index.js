@@ -17,7 +17,6 @@ app.get('/scores', (request, response) => {
 })
 
 app.post('/scores', (request, response) => {
-    console.log("tulee")
     const body = request.body
     const score = new Score({
         name: body.name,
